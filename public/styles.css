@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #87CEFA, #B0E0E6); /* Sky blue gradient background */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #00BFFF, #1E90FF); /* Header color gradient */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+header p {
+    margin: 5px 0;
+    color: #E0FFFF; /* Light cyan color for text */
+}
+
+header p:nth-of-type(3) {
+    font-style: italic;
+    color: #F0FFFF; /* Light cyan for italic text */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+    color: #00BFFF; /* Bright blue color for headings */
+}
+
+.profile-info p {
+    color: #333; /* Dark color for general text */
+}
+
+.profile-info a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.profile-info a:hover {
+    text-decoration: underline;
+}
+
+.education, .skills, .interests {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #1E90FF; /* Bright blue color for section headings */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #333; /* Dark color for section headings */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+    width: 100%;
+}
