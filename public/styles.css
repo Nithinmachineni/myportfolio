@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     overflow: hidden;
 }
 
+/* Header styles */
 header {
     background: linear-gradient(135deg, #00BFFF, #1E90FF); /* Header color gradient */
     color: #fff;
@@ -34,8 +36,10 @@ header p:nth-of-type(3) {
     color: #F0FFFF; /* Light cyan for italic text */
 }
 
+/* Profile section styles */
 .profile {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background: #fff;
     padding: 20px;
@@ -62,6 +66,7 @@ header p:nth-of-type(3) {
 
 .profile-info p {
     color: #333; /* Dark color for general text */
+    line-height: 1.6; /* Improve readability */
 }
 
 .profile-info a {
@@ -73,6 +78,7 @@ header p:nth-of-type(3) {
     text-decoration: underline;
 }
 
+/* Section styles */
 .education, .skills, .interests {
     background: #fff;
     padding: 20px;
@@ -88,11 +94,59 @@ h2 {
     color: #333; /* Dark color for section headings */
 }
 
+/* Footer styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .education, .skills, .interests {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-info p, .education p, .skills ul, .interests ul {
+        font-size: 0.9em;
+    }
 }
