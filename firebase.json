@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "nithinmachineni",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
